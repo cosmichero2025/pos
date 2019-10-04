@@ -1,0 +1,63 @@
+[
+    {
+        "category": "burgers",
+        "food": [
+            {
+                "name": "BBQ Swiss Burger",
+                "src": "https://images.pexels.com/photos/750075/pexels-photo-750075.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+                "price": 12.99
+            },
+            {
+                "name": "BLT",
+                "src": "https://images.pexels.com/photos/1639557/pexels-photo-1639557.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+                "price": 11.99
+            },
+            {
+                "name": "Chicken Slider",
+                "src": "https://images.pexels.com/photos/236488/pexels-photo-236488.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+                "price": 13.79
+            },
+            {
+                "name": "Vegatarian",
+                "src": "https://images.pexels.com/photos/2128536/pexels-photo-2128536.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+                "price": 8.59
+            },
+            {
+                "name": "Egg Burger",
+                "src": "https://images.pexels.com/photos/2293537/pexels-photo-2293537.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+                "price": 9.99
+            }
+
+        ]
+    },
+    {
+        "category": "seafood",
+        "food": [
+            {
+                "name": "Shrimp Lo-Mein",
+                "src": "https://images.pexels.com/photos/2092906/pexels-photo-2092906.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+                "price": 12.99
+            },
+            {
+                "name": "Cooked Crab",
+                "src": "https://images.pexels.com/photos/775863/pexels-photo-775863.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+                "price": 15.79
+            },
+            {
+                "name": "Mussel Platter",
+                "src": "https://images.pexels.com/photos/566345/pexels-photo-566345.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+                "price": 18.99
+            },
+            {
+                "name": "Salmon Miso & Sushi",
+                "src": "https://images.pexels.com/photos/628776/pexels-photo-628776.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+                "price": 16.49
+            },
+            {
+                "name": "Sushi Platter",
+                "src": "https://images.pexels.com/photos/2323398/pexels-photo-2323398.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+                "price": 22.79
+            }
+        ]
+    }
+]
