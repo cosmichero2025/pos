@@ -97,7 +97,8 @@ function FoodMenu() {
     const [currentTab, setCurrentTab] = useState('burgers');
     const [currentFood, setCurrentFood] = useState(foodData[0].food);
     
-    const [order, setOrder] = useContext(OrderContext);
+    // const [order, setOrder] = useContext(OrderContext);
+    const [order, dispatch] = useContext(OrderContext);
 
     useEffect(() => {
         setCurrentFood(() => {
@@ -107,6 +108,7 @@ function FoodMenu() {
         })
     }, [currentTab]);
 
+    /*
     const addOrder = ({name, price}) => {
         const objIdx = order.findIndex(obj => obj.name === name);
         
@@ -120,6 +122,8 @@ function FoodMenu() {
             setOrder(prevOrders => [...prevOrders, { name: name, price: price, qty: 1 }])
         }
     }
+
+    */
 
     return (
         <Container>
@@ -156,9 +160,7 @@ function FoodMenu() {
                 return (
                 <FoodItem 
                 key={`food-${item.name}`}
-                onClick={() => {
-                    addOrder({name: item.name, price: item.price})
-                }}>
+                onClick={() => dispatch({ type: 'addOrder', payload: {name: item.name, price: item.price} })}>
                     <img src={item.src} alt={item.name} />
                     <h1>{item.name}</h1>
                 </FoodItem>

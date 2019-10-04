@@ -62,22 +62,10 @@ const TallyHeader = styled.div `
         font-size: 1.6rem;
         margin: 1rem 0;
         text-align: center;
+        width: 20%;
 
         &:nth-of-type(1) {
             width: 40%;
-        }
-
-        &:nth-of-type(2) {
-            width: 10%;
-
-        }
-
-        &:nth-of-type(3) {
-            width: 25%;
-        }
-
-        &:nth-of-type(4) {
-            width: 25%;
         }
     }
 `;
@@ -119,10 +107,8 @@ const Option = styled.div `
     }
 `;
 
-
-
 function OrderTally() {
-    const [order, setOrder] = useContext(OrderContext);
+    const [order, dispatch] = useContext(OrderContext);
 
     return (
         <Container>
@@ -154,7 +140,7 @@ function OrderTally() {
                             isDark={i % 2 === 0} 
                             name={item.name} 
                             price={item.price} 
-                            qty={item.qty}/>
+                            qty={item.qty} />
                         )
                     })
                     }
@@ -168,7 +154,7 @@ function OrderTally() {
             <Option color='#FBB321'>
                 <h1>Hold Order</h1>
             </Option>
-            <Option color='#FF6C60' onClick={() => setOrder([])}>
+            <Option color='#FF6C60' onClick={() => dispatch({ type: 'clearOrder' })}>
                 <h1>Clear Order</h1>
             </Option>
         </Container>
